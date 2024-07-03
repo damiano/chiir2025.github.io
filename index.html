@@ -2,13 +2,180 @@
 <html> <head>
 <title>CHIIR 2025</title>
 </head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css" />
+		
+		
+		<script>
+			var countDownDate = new Date("Mar 10, 2024 09:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+			  // Get today's date and time
+			  var now = new Date().getTime();
+
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			  // Display the result in the element with id="demo"
+			  document.getElementById("countdownTimer").innerHTML = "CHIIR 2024 will begin in: " + days + "d " + hours + "h "
+			  + minutes + "m " + seconds + "s ";
+
+			  // If the count down is finished, write some text
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdownTimer").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+	</script>
 
 <body>
 <h1>CHIIR 2025</h1>
-<p>test</p>
 
+	<div class="main-frame">
+	
+		<div class="topnav" id="topnav">
+		<img src="logo_header.png" alt="ACM CHIIR 2025 Logo"/>
+			<div class="topnav-right">
+				<a href="index.html">Home</a>
+				<a href="cfp.html">CfP</a>
+				<a href="submit.html">Submit</a>
+				<a href="register.html">Register</a>
+				<a href="program.html">Programme</a>
+				<a href="attend.html">Attend</a>
+				<a href="organisers.html">Organisers</a>
+			</div>
+		</div>
+		
+		<div class="highlighted_header">Melbourne, Victoria, Australia</div>
 
-<hr>
-<address></address>
-<!-- hhmts start -->Last modified: Thu May 23 14:56:01 AEST 2024 <!-- hhmts end -->
+		<!-- Slideshow container -->
+		<div class="slideshow-container fade">
+
+		  <!-- Full images with numbers and message Info -->
+		  <div class="Containers">
+			<img src="images/carousel/IMG_8110.jpg" style="width:100%">
+		  </div>
+
+		  <div class="Containers">
+			<img src="images/carousel/IMG_3488.jpg" style="width:100%">
+		  </div>
+
+		  <div class="Containers">
+			<img src="images/carousel/IMG_4460.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="Containers">
+			<img src="images/carousel/IMG_3502.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="Containers">
+			<img src="images/carousel/IMG_6117.jpg" style="width:100%">
+		  </div>
+		  
+		  
+		</div>
+		<br>
+
+		<!-- The circles/dots -->
+		<div style="text-align:center">
+		  <span class="dots" onclick="currentSlide(1)"></span>
+		  <span class="dots" onclick="currentSlide(2)"></span>
+		  <span class="dots" onclick="currentSlide(3)"></span>
+		  <span class="dots" onclick="currentSlide(4)"></span>
+		  <span class="dots" onclick="currentSlide(5)"></span>
+		</div> 
+		
+		
+		<h1>ACM SIGIR Conference on Human Information Interaction And Retrieval</h1>
+		
+		<p>The 2025 ACM SIGIR Conference on Human Information
+		Interaction and Retrieval (CHIIR – pronounced “cheer”)
+		will take place in <strong>Melbourne, Victoria, Australia</strong> between the <strong>24th and 27th of March, 2025</strong>.  ACM SIGIR CHIIR 2025 invites submissions focused on user-centered approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
+
+<p>CHIIR is a multi-disciplinary research meeting. In addition to studies of interactive systems, information interaction, and retrieval, we encourage submissions on related topics such as human-human information interaction, novel interaction paradigms, new evaluation methods, and related research in a range of communities such as sociology, education, ethnography, psychology, human-computer interaction, and other relevant disciplines.</p>
+
+<!-- p id="countdownTimer" --><!-- /p -->
+
+		<h2>Important Dates</h2>
+		<ul>
+			<li>14th October, 2024: Full and Perspective Papers abstracts due</li>
+			<li>21st October, 2024: Tutorials and Workshops submissions due</li>
+			<li>21st October, 2024: Full Papers and Perspective Papers submissions due</li>
+			<li>31st October, 2024: Short Papers, Demos/Resources, and Doctoral Consortium paper submissions due</li>
+			<li>12th December, 2024: Notifications</li>
+			<li>24th - 27th of March, 2025: Conference </li>
+		</ul>
+		
+		<h2>Policy Against Discrimination</h2>
+
+		ACM CHIIR operates under the <a href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank">ACM Conference Code of Conduct</a>.</p>
+
+		
+		<br />
+		
+		<div class="logo_block">
+		<a href="http://rmit.edu.au/" target="_blank"><img src="rmit_logo_large.jpg" alt="RMIT University logo." /></a> 
+		</div>
+		
+	</div>
+	
+		<script>
+		var slidePosition = 1;
+		SlideShow();
+		
+		var circles = document.getElementsByClassName("dots");
+		for (i = 0; i < circles.length; i++) {
+			circles[i].className = circles[i].className.replace(" enable", "");
+		}
+
+		// forward/Back controls
+		function plusSlides(n) {
+		  SlideShow(slidePosition += n);
+		}
+
+		//  images controls
+		function currentSlide(n) {
+		  SlideShow(slidePosition = n);
+		}
+
+		function SlideShow(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("Containers");
+		  var circles = document.getElementsByClassName("dots");
+		  if (n > slides.length) {slidePosition = 1}
+		  if (n < 1) {slidePosition = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < circles.length; i++) {
+			  circles[i].className = circles[i].className.replace(" enable", "");
+		  }
+		  slides[slidePosition-1].style.display = "block";
+		  circles[slidePosition-1].className += " enable";
+		} 
+		
+		
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("topnav");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+		
 </body> </html>
