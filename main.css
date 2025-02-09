@@ -26,6 +26,18 @@ h3 {
     margin-block-end: 0.67em;
 }
 
+table {
+    width: 75%;
+}
+
+th {
+    text-align: left;
+}
+
+p {
+    line-height: 120%
+}
+
 a {
 	color: #0000EE;
 	text-decoration: none;
