@@ -197,7 +197,6 @@ html, body {
   border-radius: 5px;
 }
 
-
 /* Dots */
 .dots {
   cursor: pointer;
@@ -252,7 +251,7 @@ html, body {
 
 .profile_wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if the row is too long */
+  flex-wrap: wrap; 
   gap: 20px; /* Adds space between profile items */
   padding: 10px 0;
 }
@@ -268,11 +267,11 @@ html, body {
 
 /* Round Profile Images */
 .profile_item img {
-  width: 180px; /* Adjust the size of profile photos */
+  width: 180px; 
   height: 180px;
-  border-radius: 50%; /* Makes them circular */
-  object-fit: cover; /* Ensures faces are fully visible */
-  border: 3px solid #ddd; /* Adds a subtle border */
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #ddd; 
 }
 
 /* Name Styling */
@@ -302,7 +301,6 @@ html, body {
   border-radius: 3px;
 }
 
-/* Make links readable */
 .image-attribution a {
   color: #f8f8f8;
   text-decoration: none;
