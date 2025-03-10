@@ -59,9 +59,11 @@ html, body {
   text-decoration: none;
   color: #333;
   font-size: 12pt;
-  padding: 12px 8px;
+  padding: 12px 10px;
   display: block;
   font-weight: bold;
+  white-space: nowrap; 
+
 }
 
 .nav-links a:hover {
@@ -94,6 +96,9 @@ html, body {
   padding: 12px;
   font-size: 12pt;
   color: #333;
+  font-weight: normal; /* Remove bold */
+  white-space: normal; /* Allow wrapping */
+  word-wrap: break-word; /* Ensure long words wrap */
 }
 
 /* Show dropdown when parent has class 'open' */
@@ -300,16 +305,40 @@ html, body {
   border: 1px solid #ddd; 
 }
 
-/* Image Attribution Overlay */
+/* Ensure Image Attribution Stays in Bottom-Left */
 .image-attribution {
   position: absolute;
-  bottom: 8px;
-  left: 10px;
+  bottom: 10px; /* Keeps it inside the image */
+  left: 10px; /* Aligns to bottom-left */
   background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
   color: #fff;
   font-size: 12px;
-  padding: 5px 8px;
-  border-radius: 3px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  max-width: 90%; /* Prevents overflow */
+  white-space: normal; /* Allow wrapping */
+  z-index: 15; /* Ensures it's above the image */
+  opacity: 1; /* Prevents hiding */
+  display: block !important; /* Forces visibility */
+}
+
+/* Ensure the attribution remains visible when a slide is active */
+.Containers:target .image-attribution,
+.Containers:first-of-type .image-attribution {
+  display: block !important;
+  opacity: 1;
+}
+
+/* Ensure attribution is responsive */
+@media (max-width: 768px) {
+  .image-attribution {
+    font-size: 10px;
+    padding: 4px 6px;
+    bottom: 5px;
+    left: 5px;
+    max-width: 85%;
+    white-space: normal; /* Allow wrapping */
+  }
 }
 
 .image-attribution a {
