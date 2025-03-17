@@ -41,6 +41,10 @@ html, body {
   margin-right: 15px;
 }
 
+td {
+  white-space: nowrap;
+}
+
 /* Navigation Links */
 .nav-links {
   list-style: none;
