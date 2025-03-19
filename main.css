@@ -250,29 +250,68 @@ td {
       width: 8px;
   }
 }
+
 /* Footer container */
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
-  gap: 20px; 
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; 
+  text-align: center; 
 }
 
-/* Footer logo */
+/* Footer logo wrapper */
 .footer-logo {
-  height: 80px; 
-  width: auto; 
-  display: inline-block; 
-  margin: 20px; 
-  vertical-align: middle; 
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 auto;
+  max-width: 200px; 
 }
+
+/* Footer logo images */
+.footer-logo img {
+  height: auto; 
+  max-height: 100px; 
+  max-width: 100%; 
+  object-fit: contain; 
+}
+
+/* Make images smaller on smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap; 
+  }
+  .footer-logo img {
+    max-height: 60px; 
+    max-width: 80%; 
+  }
+}
+
+/* Further reduce size and stack images on mobile */
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column; 
+  }
+  .footer-logo {
+    max-width: 150px;
+  }
+  .footer-logo img {
+    max-height: 50px; 
+    max-width: 100%; 
+  }
+}
+
 
 
 .profile_wrapper {
   display: flex;
   flex-wrap: wrap; 
-  gap: 20px; /* Adds space between profile items */
+  gap: 20px; 
   padding: 10px 0;
 }
 
