@@ -1,205 +1,154 @@
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html> <head>
-<title>CHIIR 2025</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHIIR 2025</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="menu.js"></script>
+	<script src="slideshow.js"></script>
+
 </head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css" />
-		
-		
-		<script>
-			var countDownDate = new Date("Mar 24, 2025 09:00:00").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-
-			  // Get today's date and time
-			  var now = new Date().getTime();
-
-			  // Find the distance between now and the count down date
-			  var distance = countDownDate - now;
-
-			  // Time calculations for days, hours, minutes and seconds
-			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			  // Display the result in the element with id="demo"
-			  document.getElementById("countdownTimer").innerHTML = "CHIIR 2024 will begin in: " + days + "d " + hours + "h "
-			  + minutes + "m " + seconds + "s ";
-
-			  // If the count down is finished, write some text
-			  if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("countdownTimer").innerHTML = "EXPIRED";
-			  }
-			}, 1000);
-	</script>
-
 <body>
-<h1>CHIIR 2025</h1>
 
-	<div class="main-frame">
+<header class="topnav">
+    <div class="nav-container">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/chiir25.png" alt="ACM CHIIR 2025 Logo" class="logo"/>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cfp.html">CFP</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li class="dropdown">
+                    <a href="schedule.html">Programme</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="keynotes.html">Keynotes</a></li>
+                        <li><a href="workshops.html">Workshops and Tutorials</a></li>
+                        <li><a href="banquet.html">Banquet</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Melbourne</a></li>
+                <li><a href="organisers.html">Organisers</a></li>
+                <li><a href="submit.html">Submit</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle">&#9776;</button>
+    </div>
+</header>
+
+<div class="main-container">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+    <div class="slideshow-header">
+        <p>CHIIR 2025<br>
+        24-28 March, Melbourne, Victoria, Australia</p>
+    </div>
+
+   
+    
+    <div class="Containers">
+        <img src="images/melbourne-vsl.jpg" alt="Victoria State Library">
+        <div class="image-attribution">
+            Photo by <a href="https://www.flickr.com/photos/dlee13/36755306762/in/photolist-XZWyay-bvNkso-XaqQPG-2jeJVTH-2ndKQvC-2iK8jn5-2mYEwgU-9U795D-2mYsvuf-2n69hmW-2o4rfDb-2n69huM-2mfBw7T-2ndQMdH-UaeQj5-2ncfy3U-zwywp3-2n6cs9K-e56JDs-84VPcC-8uUQq8-2jeHu38-2jfBSC9-bQGRq6-2jfG4rj-2oajAZ7-2jf8ATP-2ddx2JG-V2YLhR-2jfiXTJ-2mYnEUJ-2jgUsGB-2dU1ntK-fhEdxu-2ndVX2z-2j6Va2M-2hhWo83-2m9a8k7-in4nHC-2n2gnko-2jeQwCJ-2jfiYh4-2jfmJez-2jeQwL9-wLP2YM-8niQSp-cUw46U-2neBwd2-dnYy5U-2jfhwpm"
+               target="_blank">Daniel Lee</a> / 
+            <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank">CC BY-NC-ND 2.0</a>
+        </div>
+    </div>
+
+    <div class="Containers">
+        <img src="images/melbourne-swanston.jpg" alt="Melbourne Swanston Street">
+        <div class="image-attribution">
+            Photo by <a href="https://unsplash.com/photos/tram-on-road-near-buildings-g1fTtCjszM4"
+               target="_blank">Shaun Low on Unsplash</a> 
+        </div>
+    </div>
+
+    <div class="Containers">
+        <img src="images/melbourne-yarra.jpg" alt="Australia, Melbourne, City image">
+        <div class="image-attribution">
+            Photo by <a href=" https://pixabay.com/photos/australia-melbourne-city-cityscape-3905135/"
+               target="_blank">Jonny Joka on Pixabay</a> 
+        </div>
+    </div>
+   
+    <div class="Containers">
+        <img src="images/melbourne-vm.jpg">
+    </div>
+
+    <div class="Containers">
+        <img src="images/melbourne-flindersst.jpg" alt="Flinders Street Railway Station, Melbourne, Australia">
+        <div class="image-attribution">
+            Photo by <a href="https://unsplash.com/photos/white-bus-near-brown-and-yellow-dome-building-iFdPrhOPI_E"
+               target="_blank">Weyne Yew on Unsplash</a>
+        </div>
+    </div>
+</div>
+
+    <!-- The circles/dots -->
+    <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dots" onclick="currentSlide(4)"></span>
+        <span class="dots" onclick="currentSlide(5)"></span>
+    </div> 
+</div>
+
+<script src="slideshow.js"></script>
+
+<!-- Conference Information -->
+<div class="main-container">
+	<p><span style="color:#b32525; font-weight:bold; font-size:18pt">NEW:</span>
+		<span style="font-size:16pt"><i>Registration is now open.</i></span></p>
 	
-		<div class="topnav" id="topnav">
-		<img src="logo_header.png" alt="ACM CHIIR 2025 Logo"/>
-			<div class="topnav-right">
-				<a href="index.html">Home</a>
-				<a href="cfp.html">CfP</a>
-				<a href="register.html">Register</a>
-				<a href="schedule.html">Programme</a>
-				<a href="workshops.html">Workshops</a>
-				<a href="organisers.html">Organisers</a>
-				<a href="submit.html">Submit</a>
-				<!-- a href="attend.html">Attend</a>-->
-			</div>
-		</div>
-		
-		<p><span style="color:#b32525; font-weight:bold; font-size:18pt">NEW:</span>
-		<span style="font-size:16pt"><i>Registration now open
-		- early deadline 9th March.</i></span></p>
-		
-		<div class="highlighted_header">Melbourne, Victoria, Australia</div>
+    <h1>ACM SIGIR Conference on Human Information Interaction And Retrieval</h1>
+    <p>The 2025 ACM SIGIR Conference on Human Information Interaction and Retrieval (CHIIR – pronounced “cheer”)
+    will take place in <strong>Melbourne, Victoria, Australia</strong> between the <strong>24th and 28th of March, 2025</strong>.
+    ACM SIGIR CHIIR 2025 invites submissions focused on user-centered approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
+    <p>
+        CHIIR is a multi-disciplinary research meeting. In addition to studies of interactive systems, information interaction, and retrieval, we encourage submissions on related topics such as human-human information interaction, novel interaction paradigms, new evaluation methods, and related research in a range of communities such as sociology, education, ethnography, psychology, human-computer interaction, and other relevant disciplines.
+    </p>
 
-		<!-- Slideshow container -->
-		<div class="slidyeshow-container fade">
+    <h2>Venue and Schedule</h2>
+    <p>CHIIR will be held in central Melbourne, with the main conference venue being the State Library of Victoria (SLV). The main conference will run 24th-26th March. Tutorials, workshops and consortia will run on the 27th and 28th March nearby to the SLV.</p>
 
-		  <!-- Full images with numbers and message Info -->
-		  <div class="Containers">
-			<img src="images/melbourne.jpeg" style="width:100%">
-		  </div>
+    <h2>Important Dates</h2>
+    <ul>
+        <li><strike>14th</strike> 17th October, 2024: Full and Perspective Papers abstracts due</li>
+        <li>21st October, 2024: Tutorials and Workshops submissions due</li>
+        <li><strike>21st</strike> 24th October, 2024: Full Papers and Perspective Papers submissions due</li>
+        <li><strike>31st October</strike> 4th November, 2024: Short Papers, Demos/Resources</li>
+        <li>18th November: Doctoral Consortium paper submissions due</li>
+        <li>17th December, 2024: Notifications</li>
+        <li>24th - 28th of March, 2025: Conference</li>
+    </ul>
 
-		  <div class="Containers">
-			<img src="images/melbourne.jpeg" style="width:100%">
-		  </div>
+    <h2>Policy Against Discrimination</h2>
+    <p>ACM CHIIR operates under the <a href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank">
+    ACM Conference Code of Conduct</a>.</p>
+<!-- Footer -->
+<h2>Sponsors</h2>
+<div class="footer">
+    <div class="footer-logo">
+        <a href="http://rmit.edu.au/" target="_blank">
+            <img src="images/rmit_logo.png" alt="RMIT University logo." class="footer-logo">
+        </a> 
+    </div>
+    <div class="footer-logo">
+        <a href="https://www.rmit.edu.au/about/schools-colleges/stem-college/research/leading-research-centres#chai" target="_blank">
+            <img src="images/STEM_logo_CMYK.jpg" alt="RMIT CHAI" class="footer-logo">
+        </a> 
+    </div>
+    <p><em>ACM SIGIR CHIIR 2025 is hosted on the unceded lands of the Woi wurrung and Boon wurrung language groups of the eastern Kulin nation. We acknowledge the Traditional Custodians of Country throughout Australia, and their continuing connection to culture, community, land, sea, and sky. We pay our respects to Ancestors and Elders past, and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.</em></p>
+      </div>
 
-		  <div class="Containers">
-			<img src="images/melbourne.jpeg" style="width:100%">
-		  </div>
+</div>
 
-		  <div class="Containers">
-			<img src="images/melbourne.jpeg" style="width:100%">
-		  </div>
 
-		  <div class="Containers">
-			<img src="images/melbourne.jpeg" style="width:100%">
-		  </div>
-
-		  
-		</div>
-		<br>
-
-		<!-- The circles/dots -->
-		<div style="text-align:center">
-		  <span class="dots" onclick="currentSlide(1)"></span>
-		  <span class="dots" onclick="currentSlide(2)"></span>
-		  <span class="dots" onclick="currentSlide(3)"></span>
-		  <span class="dots" onclick="currentSlide(4)"></span>
-		  <span class="dots" onclick="currentSlide(5)"></span>
-		</div> 
-		
-		
-		<h1>ACM SIGIR Conference on Human Information Interaction And Retrieval</h1>
-		
-		<p>The 2025 ACM SIGIR Conference on Human Information
-		Interaction and Retrieval (CHIIR – pronounced “cheer”)
-		will take place in <strong>Melbourne, Victoria, Australia</strong> between the <strong>24th and 28th of March, 2025</strong>.  ACM SIGIR CHIIR 2025 invites submissions focused on user-centered approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
-
-<p>CHIIR is a multi-disciplinary research meeting. In addition to
-		studies of interactive systems, information interaction, and
-		retrieval, we encourage submissions on related topics such as
-		human-human information interaction, novel interaction paradigms,
-		new evaluation methods, and related research in a range of
-		communities such as sociology, education, ethnography, psychology,
-		human-computer interaction, and other relevant disciplines.</p>
-
-		<h2>Venue and Schedule</h2>
-		<p>CHIIR will be held in central Melbourne, with the main
-		conference venue being the State Library of Victoria. The main
-		conference will run 24th-26th March. Tutorials, workshops and
-		consortia will run on the 27th and 28th March nearby to the SLV.</p>
-
-<!-- p id="countdownTimer" --><!-- /p -->
-
-		<h2>Important Dates</h2>
-		<ul>
-			<li><strike>14th</strike> 17th October, 2024: Full and Perspective Papers abstracts due (extended deadline)</li>
-			<li>21st October, 2024: Tutorials and Workshops submissions due</li>
-			<li><strike>21st</strike> 24th October, 2024: Full Papers and Perspective Papers
-		submissions due (extended deadline)</li>
-			<li><strike>31st October</strike> 4th November, 2024: Short
-		Papers, Demos/Resources</li>
-		<li>18th November: Doctoral Consortium paper submissions due</li>
-			<li>17th December, 2024: Notifications</li>
-			<li>24th - 28th of March, 2025: Conference </li>
-		</ul>
-		
-		<h2>Policy Against Discrimination</h2>
-
-		ACM CHIIR operates under the <a href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank">ACM Conference Code of Conduct</a>.</p>
-
-		
-		<br />
-		
-		<div class="logo_block">
-		<a href="http://rmit.edu.au/" target="_blank"><img src="rmit_logo_large.jpg" alt="RMIT University logo." /></a> 
-		</div>
-
-		<p><em>
-		ACM SIGIR CHIIR 2025 is hosted on the unceded lands of the Woi wurrung and Boon wurrung language groups of the eastern Kulin nation. We acknowledge the Traditional Custodians of Country throughout Australia, and their continuing connection to culture, community, land, sea, and sky. We pay our respects to Ancestors and Elders past, and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.
-		</em></p>
-		
-	</div>
-	
-		<script>
-		var slidePosition = 1;
-		SlideShow();
-		
-		var circles = document.getElementsByClassName("dots");
-		for (i = 0; i < circles.length; i++) {
-			circles[i].className = circles[i].className.replace(" enable", "");
-		}
-
-		// forward/Back controls
-		function plusSlides(n) {
-		  SlideShow(slidePosition += n);
-		}
-
-		//  images controls
-		function currentSlide(n) {
-		  SlideShow(slidePosition = n);
-		}
-
-		function SlideShow(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("Containers");
-		  var circles = document.getElementsByClassName("dots");
-		  if (n > slides.length) {slidePosition = 1}
-		  if (n < 1) {slidePosition = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-			  slides[i].style.display = "none";
-		  }
-		  for (i = 0; i < circles.length; i++) {
-			  circles[i].className = circles[i].className.replace(" enable", "");
-		  }
-		  slides[slidePosition-1].style.display = "block";
-		  circles[slidePosition-1].className += " enable";
-		} 
-		
-		
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("topnav");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		  } else {
-			navbar.classList.remove("sticky");
-		  }
-		}
-		</script>
-		
-</body> </html>
+</body>
+</html>

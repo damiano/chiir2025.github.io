@@ -5,28 +5,41 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css" />
-		
+		<script src="menu.js"></script>
+
 	</head>
     <body>
-	
-	<div class="main-frame">
-	
-		<div class="topnav" id="topnav">
-		<img src="logo_header.png" alt="ACM CHIIR 2025 Logo"/>
-			<div class="topnav-right">
-				<a href="index.html">Home</a>
-				<a href="cfp.html">CfP</a>
-				<a href="register.html">Register</a>
-				<a href="schedule.html">Programme</a>
-				<a href="workshops.html">Workshops</a>
-				<a href="organisers.html">Organisers</a>
-				<a href="submit.html">Submit</a>
-				<!-- a href="register.html">Register</a>
-				<a href="attend.html">Attend</a>-->
-			</div>
-		</div>
-		
-		<div class="highlighted_header">ACM CHIIR 2025 Call for Submissions</div>
+		<header class="topnav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <a href="index.html">
+						<img src="images/chiir25.png" alt="ACM CHIIR 2025 Logo" class="logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cfp.html">CFP</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li class="dropdown">
+                            <a href="schedule.html">Programme</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="keynotes.html">Keynotes</a></li>
+                                <li><a href="workshops.html">Workshops and Tutorials</a></li>
+								<li><a href="banquet.html">Banquet</a></li>
+							</ul>
+                        </li>
+						<li><a href="about.html">About Melbourne</a></li>
+                        <li><a href="organisers.html">Organisers</a></li>
+                        <li><a href="submit.html">Submit</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle">&#9776;</button>
+            </div>
+        </header>
+	<div class="main-container">		
+		<h1>ACM CHIIR 2025 Call for Submissions</h1>
 		
 		<p>The 2025 ACM SIGIR Conference on Human Information Interaction and Retrieval (CHIIR – pronounced “cheer”) will take place in Melbourne, Australia between the 24th and 27th of March, 2025. ACM SIGIR CHIIR 2025 invites submissions focused on user-centred approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
 
@@ -260,49 +273,17 @@ Tutorial proposals will be reviewed and selected according to these criteria: (1
 </p>
 </div>
 </div>
-		
-		
-		<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-
-			for (i = 0; i < acc.length; i++) {
-			  acc[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var panel = this.nextElementSibling;
-				panel.style.display = panel.style.display == "block" ? "none" : "block";
-			  });
-			}
-		</script>
-		
-		
-		<br />
 		<br />
 		
-		<div class="logo_block">
-		<a href="http://rmit.edu.au/" target="_blank"><img src="rmit_logo_large.jpg" alt="RMIT University logo."/></a> 
+		<div class="footer">
+			<div class="logo_block">
+				<a href="http://rmit.edu.au/" target="_blank">
+					<img src="images/rmit_logo_large.jpg" alt="RMIT University logo." class="footer-logo">
+				</a> 
+			</div>
+			<p><em>ACM SIGIR CHIIR 2025 is hosted on the unceded lands of the Woi wurrung and Boon wurrung language groups of the eastern Kulin nation. We acknowledge the Traditional Custodians of Country throughout Australia, and their continuing connection to culture, community, land, sea, and sky. We pay our respects to Ancestors and Elders past, and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.</em></p>
 		</div>
-
-		<p><em>
-		ACM SIGIR CHIIR 2025 is hosted on the unceded lands of the Woi wurrung and Boon wurrung language groups of the eastern Kulin nation. We acknowledge the Traditional Custodians of Country throughout Australia, and their continuing connection to culture, community, land, sea, and sky. We pay our respects to Ancestors and Elders past, and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.
-		</em></p>
 		
 	</div>
-	
-		<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("topnav");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		  } else {
-			navbar.classList.remove("sticky");
-		  }
-		}
-		</script>
-	
     </body>
 </html>

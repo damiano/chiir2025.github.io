@@ -5,61 +5,151 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css" />
-    </head>
+		<script src="menu.js"></script>
+
+	</head>
     <body>
-	
-	<div class="main-frame">
-	
-		<div class="topnav" id="topnav">
-		<img src="logo_header.png" alt="ACM CHIIR 2025 Logo"/>
-			<div class="topnav-right">
-				<a href="index.html">Home</a>
-				<a href="cfp.html">CfP</a>
-				<a href="register.html">Register</a>
-				<a href="schedule.html">Programme</a>
-				<a href="workshops.html">Workshops</a>
-				<a href="organisers.html">Organisers</a>
-				<a href="submit.html">Submit</a>
-				<!-- span class="disabled">Submit</span>
-				<span class="disabled">Register</span>
-				<span class="disabled">Attend</span>-->
-			</div>
-		</div>
+		<header class="topnav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <a href="index.html">
+						<img src="images/chiir25.png" alt="ACM CHIIR 2025 Logo" class="logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cfp.html">CFP</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li class="dropdown">
+                            <a href="schedule.html">Programme</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="keynotes.html">Keynotes</a></li>
+                                <li><a href="workshops.html">Workshops and Tutorials</a></li>
+								<li><a href="banquet.html">Banquet</a></li>
+                            </ul>
+                        </li>
+						<li><a href="about.html">About Melbourne</a></li>
+                        <li><a href="organisers.html">Organisers</a></li>
+                        <li><a href="submit.html">Submit</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle">&#9776;</button>
+            </div>
+        </header>
+		<div class="main-container">		
 		
-		<div class="highlighted_header">General Schedule</div>
+		<h1>Programme</h1>
 		
-		<h1>Main Conference: 24th-26th March</h1>
-		<p>The main conference venue will be the State Library
-		of Victoria, right in the heart of Melbourne's downtown.</p>
+		<h2>Main Conference: 24th-26th March</h2>
+		<p>The main conference venue will be in the Conversation Quarter in the State Library of Victoria, right in the heart of Melbourne's downtown.</p>
 		
 		
-		<h1>Tutorials, Doctoral Colloquium and Workshops: 27th-28th March</h1>
+		<h2>Tutorials, Doctoral Colloquium and Workshops: 27th-28th March</h2>
+		<p>These events will take place at Storey Hall, RMIT.</p>
 
+		<h2>Schedule At-a-Glance</h2>
+<div style="overflow-x: auto;">
+<table border="1" cellspacing="0" cellpadding="8" style="border-collapse: collapse; width: 100%; text-align: center;">
+    <tr style="background-color: #f2f2f2;">
+        <th colspan="2">Monday 24th March</th>
+        <th colspan="2">Tuesday 25th March</th>
+        <th colspan="2">Wednesday 26th March</th>
+        <th colspan="2">Thursday 27th March</th>
+        <th colspan="2">Friday 28th March</th>
+    </tr>
+    <tr style="background-color: #e6e6e6;">
+        <th>Time</th><th>Session</th>
+        <th>Time</th><th>Session</th>
+        <th>Time</th><th>Session</th>
+        <th>Time</th><th>Session</th>
+        <th>Time</th><th>Session</th>
+    </tr>
+    <tr>
+        <td>09:30 AM - 09:45 AM</td> <td>Welcome</td> 
+        <td rowspan="2">09:30 AM - 11:00 AM</td> <td rowspan="2"><a href="#S4">Teaching and Learning</a></td>
+        <td rowspan="2">10:00 AM - 11:10 AM</td> <td rowspan="2"><a href="#S8">Training</a></td> 
+        <td rowspan="4">09:00 AM - 12:30 PM</td> 
+        <td rowspan="4" style="text-align: left;">
+		<ul>
+            <li>Doctoral Consortium </li>
+            <li><a href="workshops.html#NeuroPhysIIR">Workshop: NeuroPhysIIR</a> <br></li>
+			<li><a href="workshops.html#Transdisciplinarity">Tutorial: Transdisciplinarity for <br> human information interaction and retrieval</a></li>
+        </ul>
+		</td> 
+        <!-- <td rowspan="4">TBA</td> -->
+        <td rowspan="4">09:00 AM - 12:30 PM</td> 
+        <td rowspan="4" style="text-align: left;"><a href="workshops.html#DIMIRA">Workshop: Access for Heads<br> Up Computing (DIMIRA-HUC)</a></td>
+        <!-- <td rowspan="4">TBA</td> -->
+    </tr>
+    <tr>
+        <td>09:45 AM - 11:00 AM</td> <td>Keynote</td>
+        <!-- <td></td> <td></td> <td>TBA</td> -->
+    </tr>
+    <tr style="background-color: #dddddd;">
+        <td>11:00 AM - 11:30 AM</td> <td>Coffee Break</td> 
+        <td>11:00 AM - 11:30 AM</td> <td>Coffee Break</td> 
+        <td>11:10 AM - 11:40 AM</td> <td>Coffee Break</td> 
+    </tr>
+    <tr>
+        <td>11:30 AM - 01:00 PM</td> <td><a href="#S1">Interfaces</a></td>
+        <td>11:30 AM - 12:40 PM</td> <td><a href="#S5">Sharing</a></td>
+        <td>11:40 AM - 12:45 PM</td> <td><a href="#S9">Conversation</a></td>
+    </tr>
+    <tr style="background-color: #dddddd;">
+        <td>01:00 PM - 02:00 PM</td> <td>Lunch</td> 
+        <td>12:40 PM - 01:40 PM</td> <td>Lunch</td> 
+        <td>12:45 PM - 01:45 PM</td> <td>Lunch</td> 
+        <td>12:30 PM - 01:30 PM</td> <td>Lunch</td> 
+        <td>12:30 PM - 01:30 PM</td> <td>Lunch</td> 
+    </tr>
+    <tr>
+        <td>02:00 PM - 03:35 PM</td> <td><a href="#S2">Looking Deeper</a></td> 
+        <td>01:40 PM - 02:45 PM</td> <td><a href="#S6">Music and Leisure</a></td> 
+        <td>01:45 PM - 03:00 PM</td> <td><a href="#S10">Demos</a></td> 
+        <td rowspan="3">01:30 PM - 05:00 PM</td> 
+        <td rowspan="3" style="text-align: left;">
+			<ul>
+				<li><a href="workshops.html#NeuroPhysIIR">Workshop: NeuroPhysIIR (cont.)</a> </li>
+				<li><a href="workshops.html#LLM4IR">Tutorial: Applying Large Language <br> Models to Interactive Information Retrieval</a></li>
+			</ul>
 
-		<h2>Schedule At-a-glance</h2>
-		<table>
-			<tr><th colspan=2>Monday 24th March</th><th colspan=2>Tuesday 25th March</th><th colspan=2>Wednesday 26th March</th></tr>
-			<tr><th width="170px">Times</th><th width="170px">Session</th><th width="170px">Times</th><th width="170px">Session</th><th width=170px>Times</th><th width="170px">Session</th></tr>
-			<tr><td width=170px>09:30 - 09:45</td><td>Welcome</td><td
-		rowspan=2>09:30-11:00</td><td rowspan=2><a href="#S4">Teaching and Learning</a></td><td>10:00am-11:10am</td><td><a href="#S8">Training</a></td></tr>
-			<tr><td>09:45 - 11:00</td><td>Keynote</td><td></td><td></td>
-			<tr><td bgcolor="#dddddd">11:00 - 11:30</td><td bgcolor="#dddddd">Coffee</td><td bgcolor="#dddddd">11:00 - 11:30</td><td bgcolor="#dddddd">Coffee</td><td bgcolor="#dddddd">11:10-11:40</td><td bgcolor="#dddddd">Coffee</td></tr>
-			<tr><td>11:30 - 1:00pm</td><td><a
-		href="#S1">Interfaces</a></td><td>11:30 - 12:40pm</td><td><a href="#S5">Sharing</a></td><td>11:40am-12:45pm</td><td><a href="#S9">Conversation</a></td></tr>
-			<tr><td bgcolor="#dddddd">1:00pm-2:00pm </td><td bgcolor="#dddddd">Lunch</td><td bgcolor="#dddddd">12:40pm - 1:40pm</td><td bgcolor="#dddddd">Lunch</td><td bgcolor="#dddddd">12:45pm-1:45pm</td><td bgcolor="#dddddd">Lunch</td></tr>
-			<tr><td>2:00pm-3:35pm</td><td><a href="#S2">Looking
-		Deeper</a></td><td>1:40pm-2:45pm</td><td><a href="#S6">Music and Leisure</a></td><td>1:45pm-3:00pm</td><td><a href="#S10">Demos</a></td></tr>
-			<tr><td bgcolor="#dddddd">3:35pm-4:00pm</td><td bgcolor="#dddddd">Afternoon
-		tea</td><td bgcolor="#dddddd">2:45pm-3:15pm</td><td bgcolor="#dddddd">Afternoon tea</td><td bgcolor="#dddddd">3:00pm-3:30pm</td><td bgcolor="#dddddd">Afternoon tea</td></tr>
-			<tr><td>4:00pm-5:05pm</td><td><a href="#S3">Commerce</a></td><td>3:15pm-4:30pm</td><td><a href="#S7">Making
-				Sense</a></td><td>3:30pm-5:00pm</td><td>Keynote and Closing</td></tr>
-				<tr><th colspan="6">For workshops and tutorials see the
-		<a href="workshops.html">workshops page</a>.</th></tr>
-		</table>
+		</td> 
+        <!-- <td rowspan="3">TBA</td> -->
+        <td rowspan="3">01:30 PM - 05:00 PM</td> 
+        <td rowspan="3" style="text-align: left;">
+            <a href="workshops.html#Responsible">Tutorial: Responsible AI From the Lens of<br> an Information Retrieval Researcher</a>
+        </td>
+        <!-- <td rowspan="3">TBA</td> -->
+    </tr>
+    <tr style="background-color: #dddddd;">
+        <td>03:35 PM - 04:00 PM</td> <td>Afternoon Tea</td> 
+        <td>02:45 PM - 03:15 PM</td> <td>Afternoon Tea</td> 
+        <td>03:00 PM - 03:30 PM</td> <td>Afternoon Tea</td> 
+    </tr>
+    <tr>
+        <td>04:00 PM - 05:05 PM</td> <td><a href="#S3">Commerce</a></td> 
+        <td>03:15 PM - 04:30 PM</td> <td><a href="#S7">Making Sense</a></td>
+        <td>03:30 PM - 05:00 PM</td> <td>Keynote and Closing</td> 
+        <!-- <td colspan="6"></td>  -->
+    </tr>
+	<tr>
+        <td colspan="2"></td>
+		<td>TBA</td><td><a href="banquet.html">Conference Banquet <br>at The Hellenic Museum</a></td>
+        <td colspan="7"></td>
+    </tr>
+</table>
+</div>
 
-		<br />
+		
 
-		<h2 id="S1">Session 1: Interfaces</h2>
+		
+
+			<br />
+
+		<h2 id="S1">Session 1: Interfaces <small>(Chair: Maria Gäde)</small></h2>
+
 		<p><i>Principles of Exploratory Search Interface
 		Design</i><br /> Orland Hoeber</p>
 		<p><i>Integrating Eye Tracking, Feature Use, and
@@ -72,7 +162,7 @@ Relevance and Confirmation Bias</i><br /> Li Shi, Gavindya Jayawardena and Jacek
 		through Advanced Data from Eye-tracking and EEG Recordings</i><br
 		/>Jacek Gwizdka and Michael Cole</p>
 
-		<h2 id="S2">Session 2: Looking Deeper</h2>
+		<h2 id="S2">Session 2: Looking Deeper <small>(Chair: Rob Capra)</small></h2>
 		<p><i>Exploring
 Self-dehumanization as a Factor in Misinformation Belief and
 		Spread</i><br />Andrew Weiss, Souvick Ghosh and Frances Johnson</p>
@@ -85,7 +175,7 @@ and Steven Dow</p>
 		<p><i>Theory-Based User Search Behaviour
 Modelling and Understanding through Search Log Analysis</i><br />Junhao Zhang and Haiming Liu	</p>
 
-		<h2 id="S3">Session 3: Commerce</h2>
+		<h2 id="S3">Session 3: Commerce <small>(Chair: Adam Roegeist)</small></h2>
 		<p><i>From Queries to Candidates: Exploring Search and
 		Source Interaction Behavior of Recruiters</i><br />Toine
 		Bogers, Mesut Kaya and Maria Gaede</p>
@@ -95,7 +185,7 @@ Azzopardi</p>
 		<p><i>Eliciting Implicit Information Needs in E-Commerce Search by Using the Think-Aloud Method</i><br />Kosetsu Tsukuda, Atsuki Maruta, Makoto P. Kato and Hideo Joho</p>
 		
 		
-		<h2 id="S4">Session 4: Teaching and Learning</h2>		
+		<h2 id="S4">Session 4: Teaching and Learning <small>(Chair: Vivien Petras)</small></h2>		
 		
 		<p><i>Teacher Online Educational Resource Search in a Flexible Curriculum: A Case
 		Study from Scotland</i><br /> Vidminas Vizgirda, Fiona McNeill and
@@ -112,7 +202,7 @@ Small Ants&quot;: An Exploratory Study on a Visualized Search System for
 Preschoolers' Picture Book Search</i><br />Jinghan Zhang, Yi Xie, Junyang
 Ma, Zhihan Zheng, Shenkang Zhai and Pianran Wang</p>
 
-     <h2 id="S5">Session 5: Sharing</h2>
+     <h2 id="S5">Session 5: Sharing <small>(Chair: Catherine Chavula)</small></h2>
 
 		<p><i>Online Information Disclosure and Information
 		Privacy Practices During Significant Life Transitions:
@@ -126,9 +216,9 @@ Buchanan and Marc Cheong</p>
 		Wendy Moncur, Burkhard Schafer, Callum Nash and
 		Melissa Duheric</p>
 
-     <h2 id="S6">Session 6: Music and Leisure</h2>
+     <h2 id="S6">Session 6: Music and Leisure <small>(Chair: Toine Bogers)</small></h2>
      <p><i>ExIM: Exploring Intent of Music Listening for Retrieving
-User-generated Playlists<i>Anna Hausberger, Hannah Strauss and Markus
+User-generated Playlists</i><br />Anna Hausberger, Hannah Strauss and Markus
 Schedl</p>
 		<p><i>Why They Come And Go: A Case Study of Productive
 		Flyby Users and Their Rating Integrity Challenge in
@@ -139,7 +229,7 @@ Schedl</p>
 		beauty information seeking</i><br /> Catherine Chavula and
 		Cassandra Kist</p>
 
-    <h2 id="S7">Session 7: Making Sense</h2>
+    <h2 id="S7">Session 7: Making Sense <small>(Chair: Paul Thomas)</small> </h2>
 		<p><i>The Effects of Working Memory during a Search
 		and Sensemaking Task</i><br /> Bogeum Choi and Jaime
 Arguello</p>
@@ -150,7 +240,7 @@ Huang</p>
 		Information</i><br /> Francesca Emter and Catherine Chavula</p>
 
 
-    <h2 id="S8">Session 8: Training</h1>
+    <h2 id="S8">Session 8: Training <small>(Chair: Mark Sanderson)</small></h2>
     <p><i>Exploring the Zero-Shot Known-Item Retrieval Capabilities of LLMs for Casual Leisure Information Needs</i><br />Toine Bogers, Maria Gaede, Mark Hall, Marijn Koolen, Vivien Petras and Mette Skov</p>
     <p><i>Instruct-to-SPARQL: A text-to-SPARQL dataset for training SPARQL
 Agents</i><br /> Mehdi Ben Amor, Alexis Strappazzon, Michael
@@ -162,7 +252,7 @@ Usefulness Evaluation in Sessions</i><br /> Jiqun Liu and Jiangen
 He</p>
     <p><i>Two Heads Are Better Than One: Improving Search Effectiveness Through LLM Generated Query Variants</i><br />Kun Ran, Marwah Alaofi, Mark Sanderson and Damiano Spina	</p>
 
-    <h2 id="S9">Session 9: Conversation</h2>
+    <h2 id="S9">Session 9: Conversation <small>(Chair: Hideo Joho)</small></h2>
     <p><i>Blending Queries and Conversations: Understanding Trust,
 		Verification, and System Choice in Search and Chat
 		Interactions</i><br />Kerstin Mayerhofer, Rob Capra and
@@ -287,30 +377,22 @@ Retrieval</i><br />Saber Zerhoudi and Michael Granitzer</p>
 Agents</i><br /> Mehdi Ben Amor, Alexis Strappazzon, Michael Granitzer, Elöd Egyed-Zsigmond and Jelena Mitrović</p>
 <p><i>A Tool for Researching how AI Affects Information Seeking</i><br /> Alamir Novin and Georgia Towne</p>
 		
-		<div class="logo_block">
-		<a href="http://rmit.edu.au/" target="_blank"><img src="rmit_logo_large.jpg" alt="RMIT University logo."/></a> 
-		</div>
-
-		<p><em>
-		ACM SIGIR CHIIR 2025 is hosted on the unceded lands of the Woi wurrung and Boon wurrung language groups of the eastern Kulin nation. We acknowledge the Traditional Custodians of Country throughout Australia, and their continuing connection to culture, community, land, sea, and sky. We pay our respects to Ancestors and Elders past, and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.
-		</em></p>
+<div class="footer">
+    <div class="footer-logo">
+        <a href="http://rmit.edu.au/" target="_blank">
+            <img src="images/rmit_logo.png" alt="RMIT University logo." class="footer-logo">
+        </a> 
+    </div>
+    <div class="footer-logo">
+        <a href="https://www.rmit.edu.au/about/schools-colleges/stem-college/research/leading-research-centres#chai" target="_blank">
+            <img src="images/STEM_logo_CMYK.jpg" alt="RMIT CHAI" class="footer-logo">
+        </a> 
+    </div>
+    <p><em>ACM SIGIR CHIIR 2025 is hosted on the unceded lands of the Woi wurrung and Boon wurrung language groups of the eastern Kulin nation. We acknowledge the Traditional Custodians of Country throughout Australia, and their continuing connection to culture, community, land, sea, and sky. We pay our respects to Ancestors and Elders past, and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.</em></p>
+</div>
 		
 	</div>
-
-		<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("topnav");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		  } else {
-			navbar.classList.remove("sticky");
-		  }
-		}
-		</script>
+</div>
 		
     </body>
 </html>
