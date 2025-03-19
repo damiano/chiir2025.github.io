@@ -37,8 +37,12 @@ html, body {
 
 /* Logo Styling */
 .logo {
-  height: 120px;
+  height: 90px;
   margin-right: 15px;
+}
+
+td {
+  white-space: nowrap;
 }
 
 /* Navigation Links */
@@ -249,11 +253,13 @@ html, body {
 
 /* Footer logo */
 .footer-logo {
-  height: 150px; 
+  height: 80px; 
   width: auto; 
-  display: block; 
-  margin: 20px auto; 
+  display: inline-block; 
+  margin: 20px; 
+  vertical-align: middle; 
 }
+
 
 .profile_wrapper {
   display: flex;
