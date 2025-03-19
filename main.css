@@ -250,6 +250,14 @@ td {
       width: 8px;
   }
 }
+/* Footer container */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
 
 /* Footer logo */
 .footer-logo {
