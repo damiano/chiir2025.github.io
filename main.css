@@ -405,7 +405,7 @@ td {
 .schedule-wrapper {
   width: 100%; 
   max-width: 80%; 
-  max-height: 500px; 
+  max-height: 550px; 
   overflow-y: auto;
   overflow-x: hidden; 
   border: 1px solid #ccc;
